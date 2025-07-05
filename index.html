@@ -1,12 +1,38 @@
-  <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-      </head>
-      <body>
-        <h1>Bobaaaaaaaaa</h1>
-        <p>PLS WE WANT BOBA I LOVE BOBA</p>
-        <img src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUybGp4eTljejdocTJtMnc3OHdtOW5xM3IwMHF4cjF4bW05dnNpN3A3cSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/NcVyqvvSaZhTo7CZYF/source.gif">
-      </body>
-  </html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        text-align: center;
+      }
+      img {
+        cursor: pointer;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Capybara</h1>
+    <p>Click him to feed</p>
+    <img
+      id="capybara"
+      src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUybGp4eTljejdocTJtMnc3OHdtOW5xM3IwMHF4cjF4bW05dnNpN3A3cSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/NcVyqvvSaZhTo7CZYF/source.gif"
+      alt="Capybara"
+    />
+    <p>Feed Count: <span id="counter">0</span></p>
+
+    <script>
+      let count = 0;
+      const capybara = document.getElementById("capybara");
+      const counterDisplay = document.getElementById("counter");
+
+      capybara.addEventListener("click", () => {
+        count++;
+        counterDisplay.textContent = count;
+      });
+    </script>
+  </body>
+</html>

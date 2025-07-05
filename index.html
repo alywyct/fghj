@@ -16,7 +16,7 @@
       }
 
       img.clicked {
-        transform: scale(1.1);
+        transform: scale(1.2);
       }
     </style>
   </head>
@@ -36,17 +36,14 @@
       const counterDisplay = document.getElementById("counter");
 
       capybara.addEventListener("click", () => {
-        // Increase counter
         count++;
         counterDisplay.textContent = count;
 
-        // Add pop animation
         capybara.classList.add("clicked");
 
-        // Remove the animation class after it's done
         setTimeout(() => {
           capybara.classList.remove("clicked");
-        }, 150); // match with CSS transition duration
+        }, 150); 
       });
     </script>
   </body>
